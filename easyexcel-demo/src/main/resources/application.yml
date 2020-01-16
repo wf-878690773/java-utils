@@ -1,0 +1,15 @@
+
+mybatis:
+  type-aliases-package: com.zr.domain
+  mapper-locations: classpath:mapper/*.xml
+
+spring:
+  thymeleaf:
+    prefix: classpath:/templates/  #classpath:指向的是是springboot项目下的resource目录，classpath:/templates/下放的是前端的html5静态页面
+    suffix: .html
+    mode: HTML5
+  datasource:
+    url: jdbc:mysql://172.3.12.6:3306/test?useUnicode=true&characterEncoding=utf8&useSSL=false  #数据库配置,useSSL=false是MySQL在高版本需要指明是否进行SSL连接
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    username: root
+    password: 123456
